@@ -1,0 +1,3 @@
+const { startKafkaConsumer } = require('.');
+
+startKafkaConsumer()

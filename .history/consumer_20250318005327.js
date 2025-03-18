@@ -7,7 +7,7 @@ const kafka = new Kafka({
 
 const consumer = kafka.consumer({ groupId: 'test-group' });
 
-const run = async () => {
+const startKafkaConsumer = async () => {
     await consumer.connect();
     await consumer.subscribe({ topic: 'test-topic', fromBeginning: true });
 
@@ -21,5 +21,5 @@ const run = async () => {
 run().catch(console.error);
 
 module.exports = {
-    run,
+    startKafkaConsumer,
   };

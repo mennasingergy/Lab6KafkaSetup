@@ -21,5 +21,5 @@ const run = async () => {
 run().catch(console.error);
 
 module.exports = {
-    run,
+    startKafkaConsumer,
   };
